@@ -1,0 +1,117 @@
+html {
+    height: 100%;
+    background: linear-gradient(to bottom, red, white);
+
+}
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+input {
+    padding: 10px;
+    font-size: 16px;
+}
+
+#message {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+header {
+    background-color: rgb(7, 7, 7);
+    padding: 10px 15px 10px 15px;
+    font-weight: bold;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    background-color: lightblue;
+    text-align: right;
+    padding: 10px 15px 10px 15px;
+}
+
+.nav-link {
+    color: black;
+    font-size: 25px;
+    padding: 10px 15px 10px 15px;
+}
+
+.nav-link:hover {
+    color:gray;
+}
+
+#MainTitle {
+    font-size: 60px;
+    color: rgb(220, 4, 4);
+}
+
+#MainTitle:hover {
+    color: rgb(255, 0, 0);
+}
+
+h1 {
+    margin-top: 20px;
+}
+
+.game {
+    margin-top: 50px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 20px;
+    cursor: pointer;
+    margin: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #000000;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ff0101;
+}
+
+#result {
+    margin-top: 30px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.game-board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 5px;
+    margin: 20px auto;
+    width: 320px;
+}
+
+.cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border: 2px solid #333;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+#resetButton {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+#statusMessage {
+    margin-top: 20px;
+    font-size: 1.2rem;
+}
