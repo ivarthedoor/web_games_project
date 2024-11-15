@@ -1,3 +1,30 @@
+// Clock
+const WEEK = ["SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT"];
+
+function updateTime() {
+    var now = new Date();
+
+    document.getElementById("time").innerText =
+            zeroPadding(now.getHours(), 2) + ":" +
+            zeroPadding(now.getMinutes(), 2) + ":" +
+            zeroPadding(now.getSeconds(), 2);
+
+    document.getElementById("date").innerText = 
+            now.getFullYear() + "-" +
+            zeroPadding(now.getMonth() + 1, 2) + "-" +
+            zeroPadding(now.getDate(), 2) + " " +
+            WEEK[now.getDay()];
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+    updateTime();
+    setInterval(updateTime, 1000);
+});
+
+function zeroPadding(num, digit) {
+    return String(num).padStart(digit, '0');
+}
+
 // Guess the number
 let answer = Math.floor(Math.random() * 10) + 1;
 let attempts = 0;
@@ -157,3 +184,4 @@ function resetGame() {
 
 cells.forEach(cell => cell.addEventListener('click', handleClick));
 resetButton.addEventListener('click', resetGame);
+

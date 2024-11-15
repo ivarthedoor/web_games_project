@@ -6,7 +6,7 @@ html {
 
 body {
     font-family: Arial, sans-serif;
-    text-align: center;
+
     margin: 0;
     padding: 0;
 }
@@ -26,6 +26,20 @@ header {
     background-color: rgb(7, 7, 7);
     padding: 10px 15px 10px 15px;
     font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-link {
+    color: black;
+    font-size: 25px;
+    padding: 10px 15px 10px 15px;
+    display: block;
+}
+
+.nav-link:hover {
+    color:gray;
 }
 
 footer {
@@ -37,19 +51,17 @@ footer {
     padding: 10px 15px 10px 15px;
 }
 
-.nav-link {
-    color: black;
-    font-size: 25px;
-    padding: 10px 15px 10px 15px;
-}
 
-.nav-link:hover {
-    color:gray;
-}
 
 #MainTitle {
     font-size: 60px;
     color: rgb(220, 4, 4);
+}
+
+#MainTitleMain {
+    font-size: 60px;
+    color: rgb(220, 4, 4);
+    left: 30px;
 }
 
 #MainTitle:hover {
@@ -114,4 +126,18 @@ button:hover {
 #statusMessage {
     margin-top: 20px;
     font-size: 1.2rem;
+}
+
+.datetime-container {
+    right: inherit;
+    color: rgb(235, 102, 7);
+    text-align: center;
+    text-shadow:
+    1px 1px 5px black,
+    0 0 1em red,
+    0 0 0.2em red;
+    font:
+    1.5em Georgia,
+    serif;
+
 }
